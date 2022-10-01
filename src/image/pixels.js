@@ -171,12 +171,11 @@ p5.prototype.blend = function(...args) {
 };
 
 /**
- * Copies a region of the canvas to another region of the canvas
- * and copies a region of pixels from an image used as the srcImg parameter
- * into the canvas srcImage is specified this is used as the source. If
- * the source and destination regions aren't the same size, it will
- * automatically resize source pixels to fit the specified
- * target region.
+ * Copies a region of pixels from an image (srcImage) to a region of the 
+ * canvas. If you do not pass it a srcImage parameter, it will copy a region 
+ * of the canvas to another region of the canvas.
+ * If the source and destination regions aren't the same size, it will
+ * automatically resize source pixels to fit the specified target region. 
  *
  * @method copy
  * @param  {p5.Image|p5.Element} srcImage source image
